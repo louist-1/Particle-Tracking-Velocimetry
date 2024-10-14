@@ -1,5 +1,5 @@
 ## Particle Tracking Velocimetry
-This is code I wrote for my first year University of Birmingham "Labs and Data analysis" Chemical engineering module project. The brief being: 'Using particle tracking velocimetry' to construct a 'home experiment' to measure coefficient of restitution of an object. 
+This is the code I wrote for my first year University of Birmingham "Labs and Data analysis" Chemical engineering module's 'Particle Tracking Velocimetry' project. The brief being: to construct a 'home experiment' to measure coefficient of restitution of an object. 
 I hope it will be of some assistance to others attempting similar projets.
 ### What is it?
 This code simply tracks a circular object, currently tailored to a table tennis ball, plots the locations of the found circles in every frame and calculated the corresponding coefficient of restitution (COR).
