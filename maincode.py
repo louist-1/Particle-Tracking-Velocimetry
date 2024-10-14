@@ -163,9 +163,3 @@ plotting(c1,t1,heights1,COR1,xpos1,(0),'42cm Drop 1')
 plotting(c2,t2,heights2,COR2,xpos2,(1),'42cm Drop 2')
 plotting(c3,t3,heights3,COR3,xpos3,(2),'21cm Drop 1')
 plotting(c4,t4,heights4,COR4,xpos4,(3),'21cm Drop 2')
-
-#Saving plot/ image to computer
-# plt.savefig('BallBounceTrack1by4NewFinal', dpi=300, bbox_inches='tight')
-
-
-
