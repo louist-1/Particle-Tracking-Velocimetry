@@ -127,12 +127,19 @@ c2 , t2, peaks2, heights2, COR2, xpos2 = final(cv2.VideoCapture("BigDrop2.mp4"))
 c3 , t3, peaks3, heights3, COR3, xpos3 = final(cv2.VideoCapture("SmallDrop1.mp4"))
 c4 , t4, peaks4, heights4, COR4, xpos4 = final(cv2.VideoCapture("SmallDrop2.mp4"))
 
+def subplotsfn(videopeakplot): # Small function maintaining integrity of the plots
+    if videopeakplot > 7:
+        plotnumber = plotnumber + 1
+    return plotnumber
 
+        
 fig, (axs) = plt.subplots(1, 4)# Create subplots
 fig.set_size_inches(12, 4)# Sizings
 #Add overall x and y label
 fig.supylabel('Y Displacement (Relative to frame)', fontsize = 14)
 fig.supxlabel('Time (Frame Number)', fontsize = 14)
+
+
 
 # Function to plot each previous set of data
 def plotting(c1,t1,heights,COR,xpos,no,plot_title):
@@ -153,6 +160,7 @@ def plotting(c1,t1,heights,COR,xpos,no,plot_title):
     axs[no].set_title(plot_title, fontsize = 13)
     
     # Next hashed line is optional to remove ticks on y axis.
+    
     # axs[no].tick_params(axis='y',labelcolor='none', which='both', top=False, 
                         # bottom=False, left=False, right=False)
 
