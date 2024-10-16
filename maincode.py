@@ -127,8 +127,8 @@ c2 , t2, peaks2, heights2, COR2, xpos2 = final(cv2.VideoCapture("BigDrop2.mp4"))
 c3 , t3, peaks3, heights3, COR3, xpos3 = final(cv2.VideoCapture("SmallDrop1.mp4"))
 c4 , t4, peaks4, heights4, COR4, xpos4 = final(cv2.VideoCapture("SmallDrop2.mp4"))
 
-def subplotsfn(videopeakplot): # Small function maintaining integrity of the plots
-    if videopeakplot > 7:
+def subplotsfn(videopeakplot): # Function maintaining integrity of the plots
+    if videopeakplot > critmax_peak:
         plotnumber = plotnumber + 1
     return plotnumber
 
